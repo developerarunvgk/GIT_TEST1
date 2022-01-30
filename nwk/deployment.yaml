@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-world-arun
+spec:
+  selector:
+    matchLabels:
+      app: hello-world-arun
+  replicas: 4
+  template:
+    metadata:
+      labels:
+        app: hello-world-arun
+    spec:
+      containers:
+      - name: hello-world-arun
+        image: simple-flask-app:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 5000

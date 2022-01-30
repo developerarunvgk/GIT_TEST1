@@ -1,0 +1,285 @@
+    1  minikube start --vm-driver=none
+    2  sudo apt-get install -y conntrack
+    3  minikube start --vm-driver=none
+    4  clear
+    5  minikube start --vm-driver=none
+    6  minikube status
+    7  kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --port=8080
+    8  kubectl expose deployment hello-minikube --type=NodePort
+    9  kubectl get deployments
+   10  kubectl get pods
+   11  kubectl create deployment hello-minikube --image=gcr.io/google_containers/echoserver:1.4 
+   12  kubectl get deployments
+   13  kubectl expose deployment hello-minikube --type=NodePort --port=8080
+   14  kubectl get services
+   15  minikube dashboard
+   16  kubectl get pods
+   17  kubectl get services
+   18  docker container ls
+   19  clear
+   20  docker container ls
+   21  clear
+   22  minikube stop
+   23  kubectl get pods
+   24  docker container ls
+   25  kubectl get services
+   26  clear
+   27  ls
+   28  cd /home/ubuntu
+   29  ls
+   30  cd python-flask-docker-hello-world-master/
+   31  docker build -t simple-flask-app:latest .
+   32  docker run -d -p 5000:5000 simple-flask-app
+   33  clear
+   34  docker container ls
+   35  docker stop strange_branch
+   36  docker stop strange_banach
+   37  clear
+   38  minikuber status
+   39  minikube status
+   40  clear
+   41  minikube start
+   42  minikube start --driver=none
+   43  minikube status
+   44  minikube version
+   45  clear
+   46  minikube start --vm-driver=none
+   47  docker system prune
+   48  clear
+   49  minikube delete
+   50  minikube delete --all
+   51  clear
+   52  minikube start --vm-driver=none
+   53  sudo rm -rf /tmp/juju-mk*
+   54  sudo rm -rf /tmp/minikube.*
+   55  clear
+   56  minikube start --vm-driver=none
+   57  clear
+   58  minikube status
+   59  kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --port=8080
+   60  kubectl get pods
+   61  kubectl create deployment hello-minikube --image=gcr.io/google_containers/echoserver:1.4 
+   62  kubectl get deployments
+   63  kubectl expose deployment hello-minikube --type=NodePort --port=8080
+   64  kubectl get services
+   65  docker container ls
+   66  docker ps -a
+   67  ls
+   68  docker run -d -p 5000:5000 simple-flask-app
+   69  clear
+   70  kubectl delete services hello-minikube
+   71  kubectl delete deployment hello-minikube
+   72  minikube stop
+   73  docker container ls
+   74  clear
+   75  minikube start --vm-driver=none
+   76  minikube status
+   77  kubectl get svc
+   78  kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --port=8080
+   79  kubectl get pods
+   80  kubectl get svc
+   81  kubectl get deployments
+   82  kubectl get deployment
+   83  kubectl get ns
+   84  minikube status
+   85  kubectl get pods
+   86  kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --port=8080
+   87  clear
+   88  kubectl get deployments
+   89  kubectl create deployment hello-minikube --image=gcr.io/google_containers/echoserver:1.4 
+   90  kubectl get deployments
+   91  kubectl expose deployment hello-minikube --type=NodePort --port=8080
+   92  kubectl get services
+   93  kubectl get ns
+   94  clear
+   95  ls
+   96  minikube dashboard
+   97  clear
+   98  kubectl get services
+   99  kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.4.0/aio/deploy/recommended.yaml
+  100  kubectl get pods
+  101  kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.4.0/aio/deploy/recommended.yaml
+  102  kubectl get services
+  103  kubectl get ns
+  104  kubectl proxy --address='0.0.0.0' --disable-filter=true
+  105  clear
+  106  kubectl get pods
+  107  kubectl get service
+  108  kubectl get ns
+  109  kubectl delete services hello-minikube
+  110  kubectl delete deployment hello-minikube
+  111  kubectl get deployments
+  112  kubectl get services
+  113  kubectl get ns
+  114  minikube stop
+  115  minikube status
+  116  minikube delete --all
+  117  kubectl 
+  118  cls
+  119  clear
+  120  ls
+  121  cd home/
+  122  ls -ltr
+  123  cls
+  124  clear
+  125  kubectl get pods
+  126  kubectl get svc
+  127  minikube start --vm-driver=none
+  128  minikube status
+  129  cd /home/ubuntu/docker-kubernetes-hello-world-master
+  130  ls
+  131  kubectl apply -f deployment.yaml
+  132  kubectl get nods
+  133  kubectl get nodes
+  134  kubectl get pods
+  135  clear
+  136  kubectl get pods
+  137  kubectl get services
+  138  clear
+  139  kubectl get pods
+  140  kubectl get services
+  141  kubectl apply -f deployment.yaml
+  142  docker image ls
+  143  docker image build -t arungupta/helloworld-spring-boot:latest .
+  144  docker image ls
+  145  docker image rm -f 7fbde258f293
+  146  clear
+  147  kubectl get services
+  148  kubectl delete svc hello-world-service
+  149  clear
+  150  kubectl get pods
+  151  minikube status
+  152  ls
+  153  docker build -t helloworld-flask-app:latest .
+  154  minikube status
+  155  kubectl apply -f deployment.yaml
+  156  kubectl convert -f ./my-deployment.yaml --output-version apps/v1
+  157  kubectl apply -f deployment.yaml
+  158  clear
+  159  kubectl delete svc hello-world-service
+  160  kubectl get services
+  161  cd -
+  162  clear
+  163  cd /home/ubuntu
+  164  ;s
+  165  ls
+  166  clear
+  167  git clone https://github.com/anrajme/k8s-demo.git
+  168  cd /home/ubuntu/k8s-demo/kubernetes
+  169  ls
+  170  kubernetes create -f deployment.yaml
+  171  kubectl apply -f deployment.yaml
+  172  kubernetes create -f service.yaml
+  173  kubectl apply -f service.yaml
+  174  curl http://locahost:30000
+  175  kubectl get pods
+  176  kubectl get nodes
+  177  kubectl get services
+  178  docker container ls
+  179  history
+  180  curl http://locahost:30000
+  181  kubectl get services
+  182  kubectl delete services hello-world-service
+  183  kubectl delete deployment hello-world-service
+  184  kubectl get deployments
+  185  kubectl delete deployment hello-world
+  186  kubect get pods
+  187  kubectl get pods
+  188  kubectl get nodes
+  189  kubectl get pods
+  190  history
+  191  minikube stop
+  192  minikube status
+  193  clear
+  194  sudo apt-get update -y   
+  195  sudo apt-get install lxde -y
+  196  df -h
+  197  clear
+  198  df -h
+  199  minikube start --vm-driver=none
+  200  cd /home/ubuntu/k8s-demo/kubernetes
+  201  sudo apt-get install xrdp -y
+  202  sudo passwd ubuntu
+  203  df -h
+  204  free -m
+  205  clear
+  206  minikube status
+  207  kubectl get nodes
+  208  kubectl get pods
+  209  kubectl get svcs
+  210  kubectl get svs
+  211  kubectl get services
+  212  clear
+  213  free -m
+  214  kubectl get pods
+  215  clear
+  216  kubectl get pods
+  217  minikube stop
+  218  clear
+  219  history
+  220  cd -
+  221  ls
+  222  cd /home
+  223  ls
+  224  cd ubuntu/
+  225  history>230102.txt
+  226  clear
+  227  ls
+  228  free -m
+  229  clear
+  230  cd /home/ubuntu/React_Docker/docker_Reactjs/app_react
+  231  ls
+  232  clear
+  233  ls
+  234  docker build -t reactdocker .
+  235  docker image ls
+  236  docker run -p 8111:80 reactdocker
+  237  clear
+  238  docker ps -a
+  239  docker stop reactdocker
+  240  docker container ls
+  241  clear
+  242  minikube start --vm-driver=none
+  243  minikube status
+  244  cd /home/ubuntu/k8s-demo/kubernetes
+  245  clear
+  246  ls
+  247  kubectl apply -f service.yaml
+  248  docker image ls
+  249  kubectl delete services hello-world-service
+  250  kubectl delete deployment hello-world-service
+  251  kubectl delete deployment hello-world
+  252  kubectl get pods
+  253  clear
+  254  kubectl get pods
+  255  minikube stop
+  256  history>27012022.txt
+  257  clear
+  258  minikube start --vm-driver=none
+  259  clear
+  260  ls
+  261  cd /home/ubuntu/k8s-demo/kubernetes
+  262  ls
+  263  cd kubernetes123/
+  264  ls
+  265  clear
+  266  kubernetes create -f deployment.yaml
+  267  clear
+  268  kubectl apply -f deployment.yaml
+  269  kubectl delete deployment hello-world
+  270  clear
+  271  kubectl apply -f deployment.yaml
+  272  kubectl apply -f service.yaml
+  273  kubectl get pods
+  274  docker image ls
+  275  clear
+  276  kubectl delete services hello-world-service
+  277  kubectl delete services hello-world-arun-service
+  278  kubectl delete deployment hello-world-arun
+  279  clear
+  280  kubectl apply -f deployment.yaml
+  281  kubectl apply -f service.yaml
+  282  kubectl get pods
+  283  kubectl delete services hello-world-arun-service
+  284  kubectl delete deployment hello-world-arun
+  285  history>27012022.txt
